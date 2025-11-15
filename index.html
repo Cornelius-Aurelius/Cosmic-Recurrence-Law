@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Cosmic Recurrence Law (Ω₀) | Cornelius Aurelius</title>
+
+<style>
+    body {
+        margin: 0;
+        background: #000;
+        color: #00eaff;
+        font-family: "Roboto", Arial, sans-serif;
+        overflow-x: hidden;
+        line-height: 1.75;
+    }
+
+    /* Deep cosmic gradient core */
+    body::before {
+        content: "";
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle at 50% 50%, #00121a, #000 80%);
+        z-index: -5;
+    }
+
+    /* Starfield layer */
+    body::after {
+        content: "";
+        position: fixed;
+        top: 0; left: 0;
+        width: 200%;
+        height: 200%;
+        background: url('https://raw.githubusercontent.com/solarsailors/assets/main/stars-layer.png');
+        opacity: 0.22;
+        background-size: cover;
+        animation: driftStars 160s linear infinite;
+        z-index: -4;
+    }
+
+    @keyframes driftStars {
+        0% { transform: translate(0,0); }
+        100% { transform: translate(-10%, -10%); }
+    }
+
+    /* Nebula glow overlay */
+    .nebula {
+        position: fixed;
+        top: 0; left: 0;
+        width: 180%;
+        height: 180%;
+        background:
+            radial-gradient(circle at 30% 20%, rgba(0,170,255,0.15), transparent 60%),
+            radial-gradient(circle at 70% 80%, rgba(0,100,255,0.12), transparent 60%);
+        filter: blur(60px);
+        pointer-events: none;
+        z-index: -3;
+        animation: driftNebula 80s ease-in-out infinite alternate;
+    }
+
+    @keyframes driftNebula {
+        0% { transform: translate(0%, 0%); }
+        100% { transform: translate(5%, -5%); }
+    }
+
+    header {
+        text-align: center;
+        padding: 75px 20px;
+        border-bottom: 1px solid #00eaff44;
+        box-shadow: 0 0 25px #00eaff22;
+    }
+
+    h1 {
+        font-size: 3.1rem;
+        font-weight: 900;
+        letter-spacing: 1px;
+        text-shadow: 0 0 28px #00eaff, 0 0 55px #0094c7;
+    }
+
+    .container {
+        width: 92%;
+        max-width: 1180px;
+        margin: auto;
+        padding-bottom: 80px;
+    }
+
+    .section {
+        background: rgba(0, 40, 55, 0.18);
+        padding: 35px;
+        margin: 55px auto;
+        border-radius: 14px;
+        border: 1px solid #00eaff33;
+        box-shadow: 0 0 25px #00eaff33;
+        backdrop-filter: blur(6px);
+    }
+
+    pre {
+        background: #012026;
+        padding: 20px;
+        border-left: 4px solid #00eaff;
+        border-radius: 5px;
+        overflow-x: auto;
+        color: #c9faff;
+        font-size: 0.95rem;
+        box-shadow: 0 0 15px #00eaff33;
+    }
+
+    a {
+        color: #00eaff;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    a:hover { text-shadow: 0 0 12px #00eaff; }
+
+    .download-button {
+        display: inline-block;
+        margin-top: 25px;
+        padding: 16px 34px;
+        background: #00eaff;
+        color: #000;
+        font-weight: 900;
+        font-size: 1.3rem;
+        border-radius: 8px;
+        text-decoration: none;
+        box-shadow: 0 0 25px #00eaffaa;
+        transition: 0.25s;
+    }
+    .download-button:hover {
+        transform: scale(1.05);
+        background: #00d2ff;
+        box-shadow: 0 0 40px #00eaff;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 40px 25px;
+        font-size: 0.9rem;
+        opacity: 0.8;
+        border-top: 1px solid #00eaff33;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="nebula"></div>
+
+<header>
+    <h1>The Cosmic Recurrence Law (Ω₀)</h1>
+    <p style="font-size:1.3rem;">
+        Verified Under the Omniscientrix–vΩ Unified Informational Framework
+    </p>
+</header>
+
+<div class="container">
+
+    <!-- SUMMARY -->
+    <div class="section">
+        <h2>Summary</h2>
+        <p>
+            The <strong>Cosmic Recurrence Law (Ω₀)</strong> states that sufficiently high-dimensional
+            informational systems naturally undergo recurrence — returning arbitrarily close to an earlier state.
+        </p>
+
+        <p>
+            This is an Omniscientrix-level generalization of Poincaré Recurrence applied to informational dynamics:
+        </p>
+
+        <pre>‖ state(t) − state(0) ‖ → 0</pre>
+
+    </div>
+
+    <!-- VERIFICATION -->
+    <div class="section">
+        <h2>Verification Method</h2>
+
+        <p>
+            A high-dimensional informational state evolves under a pseudo-unitary transformation.
+            If it returns close to its initial state within tolerance, recurrence is verified.
+        </p>
+
+<pre>
+(state_t = Q · state_{t−1})
+if ||state_t − state_0|| < ε → recurrence confirmed
+</pre>
+
+        <p><strong>Status:</strong> VERIFIED — recurrence occurs in simulation.</p>
+    </div>
+
+    <!-- DOWNLOAD -->
+    <div class="section">
+        <h2>Download the Verification Script</h2>
+
+        <a class="download-button" href="cosmic_recurrence_law.py" download>
+            ⬇ Download Cosmic Recurrence Verification Script (.py)
+        </a>
+    </div>
+
+    <!-- GLOSSARY -->
+    <div class="section">
+        <h2>Glossary of Symbols</h2>
+
+        <p><strong>Ω₀</strong> — Fundamental recurrence frequency<br>
+        <strong>‖·‖</strong> — Euclidean norm (distance)<br>
+        <strong>ε</strong> — Recurrence threshold<br>
+        <strong>Q</strong> — Pseudo-unitary evolution matrix<br>
+        <strong>state(t)</strong> — Informational system at time t<br></p>
+    </div>
+
+    <!-- PEER REVIEW -->
+    <div class="section">
+        <h2>Peer Review Invitation</h2>
+        <p>
+            Researchers in dynamical systems, information theory, and mathematical physics
+            are invited to reproduce and analyze recurrence.
+        </p>
+
+        <p><strong>Email:</strong>  
+            <a href="mailto:138licensing@gmail.com">138licensing@gmail.com</a></p>
+
+        <p><strong>Zenodo:</strong><br>
+            <a target="_blank"
+               href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22AURELIUS%2C%20CORNELIUS%22">
+                https://zenodo.org/…Cornelius Aurelius
+            </a></p>
+
+        <p><strong>Instagram:</strong><br>
+            <a target="_blank" href="https://www.instagram.com/cornelius_aurelius_/">
+                https://www.instagram.com/cornelius_aurelius_/
+            </a></p>
+    </div>
+
+    <!-- RIGHTS -->
+    <div class="section">
+        <h2>Comprehensive Rights & Protection Clause</h2>
+        <p>
+        © 2025 Cornelius Aurelius — All rights reserved under the Omniscientrix–vΩ Charter License.  
+        DOI: <a target="_blank" href="https://doi.org/10.5281/zenodo.17362534">10.5281/zenodo.17362534</a><br><br>
+
+        Non-commercial use permitted with attribution.<br>
+        Commercial or derivative use requires written permission.<br>
+        Algorithmic transformations and symbolic derivatives are protected.<br>
+        Peaceful-Use Doctrine applies.
+        </p>
+    </div>
+
+</div>
+
+<div class="footer">
+    CORNELIUS AURELIUS — THE OMNISCIENTRIX
+</div>
+
+</body>
+</html>
